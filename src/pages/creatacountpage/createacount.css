@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap");
+
+@import url("https://free.bboxtype.com/embedfonts/?family=FiraGO:500");
+
+.create-main {
+
+    font-family: "FiraGO", sans-serif  ;
+    
+
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 5%,
+      rgba(9, 94, 121, 0.989233193277311) 69%,
+      rgba(0, 212, 255, 1) 100%
+    );
+}
+
+.create-form {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 100px; */
+    margin-bottom: 100px;
+  }
+  
+  .create-box {
+    width: 400px;
+    height: 600px;
+    border: 1px solid;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+    padding-top: 60px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: -2px 10px 9px -1px rgba(0, 0, 0, 0.85);
+    -webkit-box-shadow: -2px 10px 9px -1px rgba(0, 0, 0, 0.85);
+    -moz-box-shadow: -2px 10px 9px -1px rgba(0, 0, 0, 0.85);
+    border: none;
+  }
+  
+  .create-flex {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .create-box p {
+    font-size: 30px;
+    color: black;
+    font-weight: 700;
+  }
+  
+  .create-name {
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 7px;
+    border-color: #1aeeef;
+  }
+  
+  .password {
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 7px;
+    border-color: #1aeeef;
+  }
+  
+  .creat-reapetpasword {
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 7px;
+    border-color: #1aeeef;
+  }
+  
+  .create-email {
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 7px;
+    border-color: #1aeeef;
+  }
+  
+  .create-reenteremail {
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 7px;
+    border-color: #1aeeef;
+  }
+  

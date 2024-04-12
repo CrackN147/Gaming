@@ -1,0 +1,186 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap");
+
+@import url("https://free.bboxtype.com/embedfonts/?family=FiraGO:500");
+
+.main-mobilegames { font-family: "FiraGO", sans-serif  ;
+    
+
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 5%,
+      rgba(9, 94, 121, 0.989233193277311) 69%,
+      rgba(0, 212, 255, 1) 100%
+    ); }
+
+.mobile-games {
+    display: table;
+    padding: 0px 100px;
+    width: 100%;
+    min-height: 10vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px auto;
+    margin-top: 100px;
+  }
+  
+  .mobile-games .mobile {
+    color: azure;
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+  
+  .mobile-games .card-box {
+    /* width: 100%; */
+    min-height: 100%;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    float: left;
+  }
+  
+  .mobile-games .card-box .card {
+    width: 280px;
+    border-radius: 10px;
+    margin: 20px 40px;
+    background-color: #1b2141;
+    overflow: hidden;
+  }
+  
+  .mobile-games .card-box .card .card-image1 {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .mobile-games .card-box .card .content {
+    padding: 10px;
+  }
+  
+  .mobile-games .card-box .card .content h4 {
+    color: #fff;
+    margin: 15px 0px;
+  }
+  
+  .mobile-games .card-box .card .progress-line {
+    position: relative;
+    height: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background: #35407e;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  }
+  
+  .mobile-games .card-box .card .progress-line span {
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    border-radius: 10px;
+    background: #1aeeef;
+    box-shadow: 0 0 10px #1aeeef;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  }
+  
+  @keyframes animate {
+    100% {
+      transform: scaleX(1);
+    }
+  }
+  
+  .mobile-games .card-box .card .info {
+    border-top: 2px solid #35407e;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .mobile-games .card-box .card .info p {
+    font-size: 1em;
+    color: #fff;
+  }
+  
+  .mobile-games .card-box .card .info p span {
+    color: #1aeeef;
+  }
+  
+  .mobile-games .card-box .card .info a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid #1aeeef;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 1px;
+  }
+  
+  .info a:hover {
+    background: #1aeeef;
+    border: none;
+    color: #050e2d;
+    box-shadow: 0 0 10px #1aeeef;
+  }
+  
+  .mobile-image1 {
+    background-image:url(../../global//images//Mobilegames/demon-slayer.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 280px;
+    min-height: 300px;
+  }
+  
+  .mobile-image2 {
+    background-image:url(../../global//images//Mobilegames/pubg-mobile.jpg);
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    max-width: 280px;
+    min-height: 300px;
+  }
+  
+  .mobile-image3 {
+    background-image: url(../../global//images//Mobilegames/modern-warfare.webp);
+    background-position: center;
+    background-size: 85%;
+    background-repeat: no-repeat;
+    max-width: 280px;
+    min-height: 300px;
+  }
+  
+  .mobile-image4 {
+    background-image: url(../../global//images//Mobilegames/fifa.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 280px;
+    min-height: 300px;
+  }
+  
+  .mobile-image5 {
+    background-image: url(../../global//images//Mobilegames/one-peace.webp);
+    background-position: top;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    max-width: 280px;
+    min-height: 300px;
+  }
+  
+  .mobile-image6 {
+    background-image:  url(../../global//images//Mobilegames/bleach.jpg);
+    background-position: top;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    max-width: 280px;
+    min-height: 300px;
+  }
+  

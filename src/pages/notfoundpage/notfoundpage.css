@@ -1,0 +1,44 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap");
+
+@import url("https://free.bboxtype.com/embedfonts/?family=FiraGO:500");
+
+
+
+.notfound-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: "FiraGO", sans-serif  ;
+    width: 100%;
+    min-height: 500px;
+    
+
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 5%,
+      rgba(9, 94, 121, 0.989233193277311) 69%,
+      rgba(0, 212, 255, 1) 100%
+    );
+
+}
+
+.notfound-link {
+    font-family: "FiraGO", sans-serif  ;
+    width: 400px;
+    height: 150px;
+    font-size: 25px;
+   color: #ffff;
+  
+}
+
+.notfound-404 { 
+    font-family: "FiraGO", sans-serif  ;
+    width: 500px;
+    height: 150px;
+    font-size: 50px;
+   color: #ff0000;
+}
