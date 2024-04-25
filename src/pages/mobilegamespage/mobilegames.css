@@ -87,6 +87,9 @@
     transform-origin: left;
     animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
   }
+
+
+  
   
   @keyframes animate {
     100% {

@@ -1,0 +1,37 @@
+[ 
+    {
+      "id": 20,
+      "tittle": "demon slayer",
+      "price": "12"
+       
+       
+      
+    },
+    {
+      "id": 21,
+      "tittle": "Pubg-Mobile",
+      "price": "free"
+    },
+    {
+      "id": 22,
+      "tittle": "call of duty",
+      "price": "5"
+    },
+    {
+      "id": 23,
+      "tittle": "FIFA Mobile",
+      "price": "15"
+    },
+    {
+      "id": 24,
+      "tittle": "One piece",
+      "price": "free"
+    },
+    {
+      "id": 25,
+      "tittle": "Bleach",
+      "price": "free"
+
+
+    }
+  ]

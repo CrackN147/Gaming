@@ -124,7 +124,7 @@
   }
   
 
-  .card .info a {
+  .playnowstyle {
     display: inline-block;
     padding: 10px 20px;
     margin: 20px 0;
@@ -132,11 +132,13 @@
     text-decoration: none;
     font-weight: 700;
     border-radius: 5px;
-    color: #fff;
+    color: #432ea9;
+    background-color: #fff;
     letter-spacing: 1px;
+    cursor: pointer;
   }
   
-  .info a:hover {
+  .playnowstyle:hover {
     background: #1aeeef;
     border: none;
     color: #050e2d;

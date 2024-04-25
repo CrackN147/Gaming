@@ -1,8 +1,8 @@
-[
+   [ 
     {
       "id": 1,
       "tittle": "god",
-      "price": "n$"
+      "price": "45"
        
        
       
@@ -10,27 +10,51 @@
     {
       "id": 2,
       "tittle": "Assassinc creed",
-      "price": "49$"
+      "price": "49"
     },
     {
       "id": 3,
       "tittle": "GTA 5",
-      "price": "50$"
+      "price": "50"
     },
     {
       "id": 4,
       "tittle": "Days Gone",
-      "price": "50$"
+      "price": "50"
     },
     {
       "id": 5,
       "tittle": "The last uf us 2",
-      "price": "80$"
+      "price": "80"
     },
+    {
+      "id": 25,
+      "tittle": "warzone",
+      "price": "60"
+
+
+    },
+
     {
       "id": 6,
       "tittle": "warzone",
-      "price": "60$"
+      "price": "60"
+
+
+    },
+
+    {
+      "id": 6,
+      "tittle": "warzone",
+      "price": "60"
+
+
+    },
+
+    {
+      "id": 6,
+      "tittle": "warzone",
+      "price": "60"
 
 
     }

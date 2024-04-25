@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
-import data from "../../global/data.json";
+import gamedata from "../../global/gamedata.json";
 
 export const Searchbar = (props) => {
   const [searchValue, setSearchValue] = useState('');
