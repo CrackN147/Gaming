@@ -2,7 +2,7 @@ import { createBrowserRouter ,   RouterProvider,  } from 'react-router-dom';
 
 import { Header, Footer,} from "./components";
 
-import { Homepage, Mobilegames,Aboutpage, Contactpage, Notfoundpage, Createacountpage, Loginpage,} from "./pages";
+import { Homepage, Mobilegames,Aboutpage, Contactpage, Notfoundpage, Createacountpage, Loginpage, Cardinfo, GameDetails,} from "./pages";
 
 
 
@@ -40,6 +40,18 @@ const router = createBrowserRouter ([
     element:<Loginpage/>,
   },
 
+  {
+    path:"/Full-info",
+    element:<Cardinfo/>,
+  },
+
+  {
+    path: '/personal/:gameId',  
+    element: <GameDetails />,
+  },
+
+
+ 
 ]) ;
    
 

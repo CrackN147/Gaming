@@ -14,6 +14,8 @@ import "./pages/creatacountpage/createacount.css";
 import "./pages/loginpage/loginpage.css";
 import "./pages/searchbar/searchbar.css";
 import "./global/changelangs/changelangs.css";
+import "./pages/cardinfo/Cardinfo.css";
+import "./pages/gamedetails/Gamedetails.css";
  
 import {App} from './App';
  

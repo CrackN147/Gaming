@@ -6,3 +6,5 @@
  export { Createacountpage } from "./creatacountpage/Createacountpage";
  export { Loginpage }  from "../pages/loginpage/Loginpage";
  export {Searchbar} from "../pages/searchbar/Searchbar";
+ export {Cardinfo}  from "../pages/cardinfo/cardinfo";
+ export {GameDetails} from "./gamedetails/gamedetails";

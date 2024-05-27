@@ -1,0 +1,1 @@
+<img src="../global/images/banner/days.png" alt="God of War"></img>
