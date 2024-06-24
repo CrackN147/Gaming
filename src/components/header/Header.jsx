@@ -7,6 +7,10 @@ import { Link } from "react-router-dom";
 export const Header = () => {
   const { dictionary } = useContext(LanguageContext);
 
+  if (!dictionary) {
+    return null; // Add this to avoid destructuring from null
+  }
+
   return (
     <header>
       <div className="header-container">

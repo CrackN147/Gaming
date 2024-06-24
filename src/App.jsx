@@ -5,12 +5,21 @@ import { LanguageProvider } from "./global/contexts/LanguageContext";
 
 export const App = () => {
   return (
-    <>
-      <LanguageProvider>
+    <LanguageProvider>
+      <Router>
         <Header />
-        <RouterProvider router={routes} />
+        <Routes>
+          {routes.routes.map((route, index) => (
+            <Route
+              key={index}
+              path={route.path}
+              element={route.element}
+              errorElement={route.errorElement}
+            />
+          ))}
+        </Routes>
         <Footer />
-      </LanguageProvider>
-    </>
+      </Router>
+    </LanguageProvider>
   );
 };
