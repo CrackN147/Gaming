@@ -35,7 +35,8 @@ export const Footer = (props) => {
                   alt="twitter"
                   width="30px"
                   height="30px"
-              /></a>
+              />
+              </a>
             </div>
           </div>
         </div>
