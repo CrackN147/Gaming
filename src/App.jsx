@@ -1,25 +1,32 @@
-import { RouterProvider } from "react-router-dom";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Header, Footer } from "./components";
 import { routes } from "./global/routes";
 import { LanguageProvider } from "./global/contexts/LanguageContext";
 
+const AppRoutes = () => {
+  return (
+    <Routes>
+      {routes.map((route, index) => (
+        <Route
+          key={index}
+          path={route.path}
+          element={route.element}
+          errorElement={route.errorElement}
+        />
+      ))}
+    </Routes>
+  );
+};
+
 export const App = () => {
   return (
-    <LanguageProvider>
-      <Router>
+    <Router>
+      <LanguageProvider>
         <Header />
-        <Routes>
-          {routes.routes.map((route, index) => (
-            <Route
-              key={index}
-              path={route.path}
-              element={route.element}
-              errorElement={route.errorElement}
-            />
-          ))}
-        </Routes>
+        <AppRoutes />
         <Footer />
-      </Router>
-    </LanguageProvider>
+      </LanguageProvider>
+    </Router>
   );
 };

@@ -1,79 +1,137 @@
-
+/* Base styles */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap");
-
 @import url("https://free.bboxtype.com/embedfonts/?family=FiraGO:500");
 
-
-
-.main-homepage {
-
-    font-family: "FiraGO", sans-serif  ;
-    
-
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 5%,
-    rgba(9, 94, 121, 0.989233193277311) 69%,
-    rgba(0, 212, 255, 1) 100%
-  );
+body {
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
+.main-homepage {
+    font-family: "FiraGO", sans-serif;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 5%, rgba(9, 94, 121, 0.989233193277311) 69%, rgba(0, 212, 255, 1) 100%);
+}
 
 .container {
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-  }
+    flex-wrap: wrap; /* Ensure flex items wrap */
+    justify-content: center;
+    padding: 0 20px; /* Add padding to avoid content touching the edges */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
 
-  .games {
-    display: table;
-    padding: 0px 100px;
+.games {
     width: 100%;
-    min-height: 10vh;
+    display: flex;
+    flex-wrap: wrap; /* Ensure flex items wrap */
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     margin: 40px auto;
-  }
+    padding: 0 20px; /* Add padding to avoid content touching the edges */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
 
-  .popular-games {
+.popular-games {
     color: azure;
     margin-bottom: 20px;
     font-size: 30px;
-  }
+    width: 100%;
+    text-align: center; /* Center the title */
+}
 
-
-  .card-box {
-    /* width: 100%; */
-    min-height: 100%;
+.card-box {
     display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
-    float: left;
-  }
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
 
-  .card {
+.card {
     width: 280px;
     border-radius: 10px;
-    margin: 20px 40px;
     background-color: #1b2141;
     overflow: hidden;
-  }
+    display: flex;
+    flex-direction: column; /* Ensure content stacks vertically */
+}
 
-  .content {
+.card-image1 { 
+  background-image: url(../../global/images/card-image/god\ of\ war.jpg) ;
+  background-position: top;
+background-size: 100%;
+background-repeat: no-repeat;
+max-width: 280px;
+min-height: 300px;
+  
+ }
+
+ .card-image2 { 
+  background-image: url(../../global/images/card-image/assassins\ creed.webp) ;
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  max-width: 280px;
+  min-height: 300px;
+  
+ }
+
+ .card-image3 { 
+  background-image: url(../../global/images/card-image/gta5.png) ;
+  background-position: bottom;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  max-width: 280px;
+  min-height: 300px;
+  
+ }
+
+ .card-image4 { 
+  background-image: url(../../global/images/card-image/days\ \ gone.jpg) ;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 280px;
+  min-height: 300px;
+  
+ }
+
+ .card-image5 { 
+  background-image: url(../../global/images/card-image/last\ of\ us.jpg) ;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 280px;
+  min-height: 300px;
+  
+ }
+
+ .card-image6 { 
+  background-image: url(../../global/images/card-image/warzone.jpg) ;
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  max-width: 280px;
+  min-height: 300px;
+  
+ }
+
+
+.content {
     padding: 10px;
-    
-  }
+    display: flex;
+    flex-direction: column; /* Ensure content stacks vertically */
+    justify-content: space-between;
+}
 
-  .content h4 {
+.content h4 {
     color: #fff;
     margin: 15px 0px;
-  }
+}
 
-  .progress-line {
+.progress-line {
     position: relative;
     height: 10px;
     width: 100%;
@@ -83,9 +141,9 @@
     transform: scaleX(0);
     transform-origin: left;
     animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
-  }
+}
 
-  .progress-line span {
+.progress-line span {
     position: absolute;
     height: 100%;
     width: 80%;
@@ -95,36 +153,30 @@
     transform: scaleX(0);
     transform-origin: left;
     animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
-  }
-  
-  @keyframes animate {
-    100% {
-      transform: scaleX(1);
-    }
-  }
+}
 
- 
- 
+@keyframes animate {
+    100% { transform: scaleX(1); }
+}
 
-  .info {
+.info {
     border-top: 2px solid #35407e;
     padding: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+}
 
-  .info p {
+.info p {
     font-size: 1em;
     color: #fff;
-  }
+}
 
-  .info p span {
+.info p span {
     color: #1aeeef;
-  }
-  
+}
 
-  .playnowstyle {
+.playnowstyle {
     display: inline-block;
     padding: 10px 20px;
     margin: 20px 0;
@@ -136,98 +188,32 @@
     background-color: #fff;
     letter-spacing: 1px;
     cursor: pointer;
-  }
-  
-  .playnowstyle:hover {
+}
+
+.playnowstyle:hover {
     background: #1aeeef;
     border: none;
     color: #050e2d;
     box-shadow: 0 0 10px #1aeeef;
-  }
+}
 
-/*  images */
-
-
-
-   .card-image1 { 
-    background-image: url(../../global/images/card-image/god\ of\ war.jpg) ;
-    background-position: top;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  max-width: 280px;
-  min-height: 300px;
-    
-   }
-
-   .card-image2 { 
-    background-image: url(../../global/images/card-image/assassins\ creed.webp) ;
-    background-position: top;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    max-width: 280px;
-    min-height: 300px;
-    
-   }
-
-   .card-image3 { 
-    background-image: url(../../global/images/card-image/gta5.png) ;
-    background-position: bottom;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    max-width: 280px;
-    min-height: 300px;
-    
-   }
-
-   .card-image4 { 
-    background-image: url(../../global/images/card-image/days\ \ gone.jpg) ;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    max-width: 280px;
-    min-height: 300px;
-    
-   }
-
-   .card-image5 { 
-    background-image: url(../../global/images/card-image/last\ of\ us.jpg) ;
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    max-width: 280px;
-    min-height: 300px;
-    
-   }
-
-   .card-image6 { 
-    background-image: url(../../global/images/card-image/warzone.jpg) ;
-    background-position: top;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    max-width: 280px;
-    min-height: 300px;
-    
-   }
-
-   
-
-   .more-flex {
+.more-flex {
     display: flex;
     justify-content: center;
-  }
+    width: 100%;
+    margin-bottom: 100px;
+}
 
-   .show-more {
+.show-more {
     border: 2px solid #fff;
     color: #fff;
     width: 120px;
-    height: 40px;
+    min-height: 25px;
     padding: 10px;
     border-radius: 7px;
     transition: ease-in-out 1s;
     text-align: center;
     background-color: #790d00;
     border: none;
-    margin-bottom: 100px;
-    margin-left: 100px;
     cursor: pointer;
-  }
+}

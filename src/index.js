@@ -16,6 +16,9 @@ import "./pages/searchbar/searchbar.css";
 import "./global/changelangs/changelangs.css";
 import "./pages/cardinfo/Cardinfo.css";
 import "./pages/gamedetails/Gamedetails.css";
+import "./components/header/headerres.css";
+import "./components/footer/footerres.css";
+import "./css/indexres.css";
  
 import {App} from './App';
  

@@ -1,38 +1,54 @@
-import { createBrowserRouter } from 'react-router-dom';
-import { Homepage, Mobilegames, Aboutpage, Contactpage, Notfoundpage, Createacountpage, Loginpage, Cardinfo, GameDetails } from "../pages";
+// global/routes.js
 
-export const routes = createBrowserRouter([
+import {
+  Homepage,
+  Mobilegames,
+  Aboutpage,
+  Contactpage,
+  Notfoundpage,
+  Createacountpage,
+  Loginpage,
+  Cardinfo,
+  GameDetails,
+  MobileDetails
+} from "../pages";
+
+export const routes = [
   {
-    path: "/",
+    path: "/:lang",
     element: <Homepage />,
     errorElement: <Notfoundpage />,
   },
   {
-    path: "/mobilegames",
+    path: "/:lang/mobilegames",
     element: <Mobilegames />,
   },
   {
-    path: "/AboutPage",
+    path: "/:lang/about",
     element: <Aboutpage />,
   },
   {
-    path: "/ContactPage",
+    path: "/:lang/contact",
     element: <Contactpage />,
   },
   {
-    path: "/Creatacountpage",
+    path: "/:lang/create-account",
     element: <Createacountpage />,
   },
   {
-    path: "/Loginpage",
+    path: "/:lang/login",
     element: <Loginpage />,
   },
   {
-    path: "/Full-info",
+    path: "/:lang/full-info",
     element: <Cardinfo />,
   },
   {
-    path: '/personal/:gameId',
+    path: '/:lang/personal/:gameId',
     element: <GameDetails />,
   },
-]);
+  {
+    path: '/:lang/mobilegame/:mobilegameId',
+    element: <MobileDetails />,
+  },
+];

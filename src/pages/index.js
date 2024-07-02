@@ -8,3 +8,6 @@
  export {Searchbar} from "../pages/searchbar/Searchbar";
  export {Cardinfo}  from "../pages/cardinfo/cardinfo";
  export {GameDetails} from "./gamedetails/gamedetails";
+ export {Mobilegamecard} from "./mobilegamescards/Mobilegamecard";
+ export {MobileDetails} from "./mobilegamedetails/mobiledetails";
+ export {GameCard}      from "./MobileGameCard/GameCard" ;
